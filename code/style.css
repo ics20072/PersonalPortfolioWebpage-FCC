@@ -3,6 +3,44 @@
   --main-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+@media (min-width: 1090px) {
+  #projects-links {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1090px) {
+  #projects-links {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 730px) {
+  #projects-links {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: grid;
+    max-width: 1300px;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
 body {
   margin: 0;
 }
@@ -85,6 +123,7 @@ body {
 #projects {
   background-color: #45567d;
   padding: 110px 20px 110px 20px;
+  text-align: center;
 }
 
 #projects h1 {
@@ -94,4 +133,59 @@ body {
   text-align: center;
   font-family: var(--main-font-family);
   font-size: 45px;
+}
+
+.project-tile {
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 3px 3px 5px rgb(0 0 0 / 50%);
+  border: solid 1px #3a3d40;
+}
+
+.project-image {
+  width: 100%;
+  height: 450px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.project-title {
+  background-color: #3a3d40;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: var(--main-font-family);
+  font-size: 23px;
+}
+
+#profile-link {
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  background-color: #3a3d40;
+  font-size: 25px;
+  font-family: var(--main-font-family);
+  padding: 10px 20px 10px 20px;
+}
+
+#profile-link:hover {
+  background-color: var(--mainRed);
+}
+
+.symbols {
+  color: #3a3d40;
+  font-size: 21px;
+}
+
+.project-tile:hover .symbols {
+  color: #be3144;
 }
